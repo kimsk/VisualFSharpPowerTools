@@ -42,28 +42,28 @@ type FullLineAdornmentManager(view: IWpfTextView, tagAggregator: ITagAggregator<
     // Gets a set of default colors to use depending on whether a light or dark theme is being used
     let defaultColors = 
         let defaultLightThemeColors = 
-            [| (225uy, 225uy, 225uy, 255uy, 255uy, 255uy)
-               (225uy, 225uy, 225uy, 255uy, 255uy, 255uy)
-               (225uy, 225uy, 225uy, 255uy, 255uy, 255uy)
-               (225uy, 225uy, 225uy, 255uy, 255uy, 255uy)
-               (225uy, 225uy, 225uy, 255uy, 255uy, 255uy)
-               (225uy, 225uy, 225uy, 255uy, 255uy, 255uy)
-               (225uy, 225uy, 225uy, 255uy, 255uy, 255uy)
-               (225uy, 225uy, 225uy, 255uy, 255uy, 255uy)
-               (225uy, 225uy, 225uy, 255uy, 255uy, 255uy)
-               (225uy, 225uy, 225uy, 255uy, 255uy, 255uy) |]
+            [| (190uy,190uy,190uy,230uy,230uy,230uy)
+               (170uy,170uy,170uy,210uy,210uy,210uy)
+               (184uy,184uy,184uy,224uy,224uy,224uy)
+               (164uy,164uy,164uy,204uy,204uy,204uy)
+               (178uy,178uy,178uy,218uy,218uy,218uy)
+               (158uy,158uy,158uy,198uy,198uy,198uy)
+               (172uy,172uy,172uy,212uy,212uy,212uy)
+               (152uy,152uy,152uy,192uy,192uy,192uy)
+               (166uy,166uy,166uy,206uy,206uy,206uy)
+               (146uy,146uy,146uy,186uy,186uy,186uy) |]
         
         let defaultDarkThemeColors = 
-            [| (70uy, 70uy, 70uy, 30uy, 30uy, 30uy)
-               (70uy, 70uy, 70uy, 30uy, 30uy, 30uy)
-               (70uy, 70uy, 70uy, 30uy, 30uy, 30uy)
-               (70uy, 70uy, 70uy, 30uy, 30uy, 30uy)
-               (70uy, 70uy, 70uy, 30uy, 30uy, 30uy)
-               (70uy, 70uy, 70uy, 30uy, 30uy, 30uy)
-               (70uy, 70uy, 70uy, 30uy, 30uy, 30uy)
-               (70uy, 70uy, 70uy, 30uy, 30uy, 30uy)
-               (70uy, 70uy, 70uy, 30uy, 30uy, 30uy)
-               (70uy, 70uy, 70uy, 30uy, 30uy, 30uy) |]
+            [| (47uy,44uy,47uy,39uy,34uy,39uy)
+               (29uy,29uy,29uy,19uy,19uy,19uy)
+               (49uy,46uy,49uy,37uy,34uy,39uy)
+               (31uy,31uy,31uy,21uy,21uy,21uy)
+               (51uy,48uy,51uy,39uy,34uy,39uy)
+               (33uy,33uy,33uy,23uy,23uy,23uy)
+               (53uy,50uy,53uy,39uy,35uy,39uy)
+               (35uy,35uy,35uy,25uy,25uy,25uy)
+               (55uy,52uy,55uy,39uy,37uy,39uy)
+               (37uy,34uy,37uy,27uy,27uy,27uy) |]
         
         try 
             let dte = serviceProvider.GetService<DTE, DTE>()
